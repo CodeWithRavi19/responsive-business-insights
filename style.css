@@ -1,0 +1,152 @@
+body {
+  background-color: hsl(233, 47%, 7%);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 60vh;
+  margin: 2rem auto;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.hero-container {
+  padding: 2rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-container span {
+  color: purple;
+}
+
+p {
+  color: gray;
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.hero-content {
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.numbers {
+  font-size: 2rem;
+}
+
+#comp, #temp, #query {
+  color: gray;
+  font-weight: lighter;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+/* Laptop/Desktop Styles */
+@media (min-width: 1024px) {
+  .card {
+    flex-direction: row-reverse;
+    min-height: 400px;
+  }
+  
+  .item img {
+    width: 50%;
+    height: auto;
+    border-radius: 0 20px 20px 0;
+  }
+  
+  .hero-container {
+    width: 50%;
+    padding: 4rem;
+    text-align: left;
+  }
+  
+  p {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+  
+  .hero-content {
+    justify-content: space-between;
+    padding: 0 4rem;
+  }
+  
+  .numbers {
+    font-size: 2.5rem;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+   .item img {
+    height: auto;
+    border-radius: 0 20px 0 0;
+  }
+  
+  .hero-container {
+    padding: 2rem;
+    font-size: 30px;
+  }
+  
+  .hero-container h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .numbers {
+    font-size: 1.8rem;
+    margin-left: 60px;
+  }
+  
+  .hero-content {
+    padding: 2rem;
+  }
+}
+
+/* Mobile Styles (optional base) */
+@media (max-width: 767px) {
+  .hero-container h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .numbers {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
