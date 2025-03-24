@@ -1,2 +1,16 @@
-# responsive-business-insights
-A sleek and fully responsive business insights landing page built with only HTML and CSS. Designed for modern web aesthetics with a clean layout and smooth responsiveness across all devices
+# Responsive Business Insights Landing Page
+
+A fully responsive and visually appealing business insights landing page designed using only HTML and CSS.
+
+## 🚀 Features
+- Fully responsive design
+- Clean and modern UI
+- Uses only HTML and CSS (no JavaScript required)
+
+## 🛠️ Technologies Used
+- HTML5
+- CSS3 (Flexbox & Grid)
+
+## 📂 Project Structure
+
+/project-folder │── index.html │── styles.css │── assets/ │ ├── images/ │ ├── fonts/
